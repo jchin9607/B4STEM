@@ -145,6 +145,7 @@ main .btn {
 
 .cards {
     display: flex;
+    justify-content: flex-start;
     gap: 1vw;
     flex-wrap: wrap;
 }
@@ -165,7 +166,7 @@ main .btn {
     /* padding: calc(10% + 60px) 15%; */
     padding: 8% 15%;
     padding-top: 61px;
-    padding-bottom: 0;
+    padding-bottom: 5%;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -198,7 +199,7 @@ main .btn {
     align-items: center;
     flex-wrap: wrap;
     height: 100%;
-    margin-top: 25px;
+    margin-top: 50px;
     gap: 2rem;
 }
 
@@ -215,7 +216,20 @@ main .btn {
     justify-content: space-between;
     align-items: center;
     padding: 15px;
+    position: relative;
 }
+
+.member::before {
+    content: "";
+    position: absolute;
+    top: -1px;
+    right: -1px;
+    bottom: -1px;
+    left: -1px;
+    background: linear-gradient(to bottom, #3066BE, #b039ff);
+    z-index: -1;
+}
+
 
 .member img {
     width: 100%;
@@ -244,6 +258,7 @@ main .btn {
 .introm p {
     text-align: left;
     margin-top: 10px;
+    margin-bottom: 0;
     font-size: 1.2rem;
 }
 
@@ -292,12 +307,13 @@ button:hover {
     left: 8%;
     height: 100%;
     width: 20px;
-    
+    opacity: 0;
 }
 
 .gitline-about {
     top: 40%;
     z-index: 1000;
+    height: 90%;
 }
 
 
@@ -310,10 +326,11 @@ section {
     z-index: 998;
     filter: drop-shadow(0 0 2rem var(--highlight-color));
     border-radius: 2px;
+    
 }
 
 .ghome {
-    background-image: linear-gradient(to bottom, #3066BE, #090C9B ); 
+    background-image: linear-gradient(to bottom, #3066BE, #b039ff ); 
 }
 
 
@@ -336,5 +353,123 @@ i {
 
 .gres {
     
-    background-image: linear-gradient(to bottom, #090C9B, var(--highlight-color) ); ;
+    background-image: linear-gradient(to bottom, #b039ff, #090C9B ); ;
+}
+
+.explainsect {
+    position: absolute;
+    top: 20px;
+    
+    
+    left: -100px;
+
+    color: var(--text-color);
+    font-size: 15px !important;
+}
+
+.gitline-show {
+    transition: 0.8s;
+    opacity: 1;
+}
+
+@media screen and (max-width: 1440px) {
+    .explainsect {
+        left: -80px;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .explainsect {
+        left: -80px;
+    }
+}
+
+@media screen and (max-width: 1157px) {
+    .gitline-about {
+        top: 35%;
+    }
+
+    .gabout {
+        height: 65%;
+    }
+
+    .explainsect {
+        left: -60px;
+        font-size: 12px !important;
+    }
+}
+
+@media screen and (max-width: 1140px) {
+    .gitline-about {
+        top: 30%;
+    }
+
+    .gabout {
+        height: 70%;
+    }
+
+}
+
+
+
+@media screen and (max-width: 888px) {
+    .gitline-about {
+        top: 27%;
+    }
+
+    .gabout {
+        height: 73%;
+    }
+
+    .explainsect {
+        display: none;
+    }
+
+    .gitline, .gitline-about, .gitline-res {
+        left: 3%;
+    }
+
+    .cards {
+        justify-content: center;
+    }
+
+   
+}
+
+@media screen and (max-width: 738px) {
+    nav a {
+        display: none;
+    }
+    .gitline-about {
+        top: 20%;
+    }
+
+    .gabout {
+        height: 80%;
+    }
+
+    .btn {
+        flex-direction: column-reverse;
+    }
+
+    main h1 {
+        font-size: 3.7rem;
+    }
+
+    main p {
+        font-size: 2rem;
+    }
+
+    main button {
+        font-size: 1.4rem;
+    }
+
+    .member img {
+        height: 300px
+    }
+
+    .card {
+        height: 320px;
+        width: 270px;
+    }
 }
