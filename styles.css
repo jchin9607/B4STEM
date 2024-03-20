@@ -90,7 +90,7 @@ a {
 
 
 main {
-    padding: 0 15%;
+    padding: 61px 15%;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
