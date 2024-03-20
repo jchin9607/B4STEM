@@ -90,7 +90,7 @@ a {
 
 
 main {
-    padding: 61px 15%;
+    padding: 0 15%;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -454,6 +454,7 @@ i {
 
     main h1 {
         font-size: 3rem;
+        white-space: nowrap;
     }
 
     main p {
