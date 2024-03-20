@@ -42,7 +42,7 @@ header {
     align-items: center;
     position: fixed;
     top: 0;
-    z-index: 999;
+    z-index: 1000;
     height: 61px;
     width: 100%;
     padding: 0 15%;
@@ -312,7 +312,7 @@ button:hover {
 
 .gitline-about {
     top: 40%;
-    z-index: 1000;
+    z-index: 999;
     height: 90%;
 }
 
@@ -453,15 +453,15 @@ i {
     }
 
     main h1 {
-        font-size: 3.7rem;
+        font-size: 3rem;
     }
 
     main p {
-        font-size: 2rem;
+        font-size: 1.3rem;
     }
 
     main button {
-        font-size: 1.4rem;
+        font-size: 1rem;
     }
 
     .member img {
