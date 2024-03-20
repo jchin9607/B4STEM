@@ -30,3 +30,7 @@ const observer = new IntersectionObserver(entries => {
 gitlines.forEach(gitline => {
   observer.observe(gitline);
 });
+
+function goHome() {
+    window.location.href = "index.html#home";
+}
