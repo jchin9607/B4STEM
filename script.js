@@ -32,5 +32,5 @@ gitlines.forEach(gitline => {
 });
 
 function goHome() {
-    window.location.href = "/#home";
+    window.location.href = "index.html#home";
 }
