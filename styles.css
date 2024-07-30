@@ -216,7 +216,7 @@ main .btn {
     width: 300px;
     text-align: center;
     color: white;
-    background-color: var(--base-color);
+    /* background-color: var(--base-color); */
     
     display: flex;
     flex-direction: column-reverse;
@@ -233,7 +233,7 @@ main .btn {
     right: -1px;
     bottom: -1px;
     left: -1px;
-    background: linear-gradient(to bottom, #3066BE, #b039ff);
+    /* background: linear-gradient(to bottom, #3066BE, #b039ff); */
     /* background-color: var(--highlight-color); */
     /* filter: drop-shadow(0 0 0.2rem var(--highlight-color)); */
     z-index: -1;
